@@ -1,5 +1,5 @@
 from enum import Enum
-import utils
+from . import utils
 
 class key_type(Enum):
     PUBLIC = 1
