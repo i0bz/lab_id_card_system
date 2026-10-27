@@ -47,6 +47,10 @@ def generate_keys(p: int, q: int, public_exponent: int) -> tuple[rsa_key, rsa_ke
         raise ValueError("Not a valid prime!!!")
 
     modulus: int = p * q
+
+    if (modulus < 256):
+        raise ValueError("Modulus cannot accomodate for Extended ASCII characters!!!")
+
     totient: int = (p - 1) * (q - 1)
 
     if (modulus < 127):
