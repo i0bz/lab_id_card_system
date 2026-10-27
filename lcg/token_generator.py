@@ -29,16 +29,3 @@ def generate_tokens(seed: int, multiplier: int, increment: int, modulus: int) ->
         tokens.append(current_state)
 
     return tokens
-
-
-
-
-
-stream = token_stream(0, 3, 1, 8)
-
-print("yes" if 1 in stream else "no")
-print(stream.tokens)
-stream.regenerate_active_tokens()
-print(stream.tokens)
-print("yes" if 3 in stream else "no")
-
