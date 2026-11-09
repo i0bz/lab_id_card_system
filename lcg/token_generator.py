@@ -2,6 +2,8 @@
 class token_stream:
 
     def __init__(self, seed: int, multiplier: int, increment: int, modulus: int):
+        if multiplier == 0:
+            raise ValueError("Invalid multiplier!!!")
         self._seed = seed
         self._multiplier = multiplier
         self._increment = increment
