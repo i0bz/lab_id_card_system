@@ -44,7 +44,7 @@ def main():
 
 
                 token_generation_results = {key: json_data[key] for key in lcg_input_fields}
-                token_generator: token_stream = token_stream(json_data[lcg_input_fields[0]], json_data[lcg_input_fields[1]], json_data[lcg_input_fields[2]], json_data[lcg_input_fields[2]])
+                token_generator: token_stream = token_stream(json_data[lcg_input_fields[0]], json_data[lcg_input_fields[1]], json_data[lcg_input_fields[2]], json_data[lcg_input_fields[3]])
                 token_generation_results |=  {"active_tokens": token_generator.tokens}
                 
                 test_results = {key: json_data[key] for key in test_payload_fields}
