@@ -1,0 +1,11 @@
+{
+    "first_prime": 191, 
+    "second_prime": 197, 
+    "public_exponent": 17,
+    "seed": 42, 
+    "multiplier": 65, 
+    "increment": 911, 
+    "modulus": 2048,
+    "student_id": "25-140001",
+    "test_token": 1599
+}
